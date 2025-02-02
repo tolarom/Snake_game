@@ -53,8 +53,8 @@ public class gamePanel extends JPanel implements ActionListener {
 
             for(int i = 0; i < bodyParts; i++){
                 if(i==0) {
-                    g.setColor(Color.GREEN);
-                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    Image image = Toolkit.getDefaultToolkit().getImage("Icon/carbon.png");
+                    g.drawImage(image, x[i], y[i], UNIT_SIZE, UNIT_SIZE, this);
                 }else {
                     g.setColor(Color.BLUE);
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
